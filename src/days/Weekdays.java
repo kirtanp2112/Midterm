@@ -6,7 +6,7 @@ package days;
 
 /**
  *
- * @author sivagamasrinivasan
+ * @author kirtan
  */
 public class Weekdays 
 {
