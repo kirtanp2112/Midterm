@@ -14,7 +14,7 @@ import java.util.Scanner;
  * change the code to use enums which avoids String input 
  * then print the week day names. 
  *
- * @author sivagamasrinivasan
+ * @author kirtan 
  */
 public class Days {
 
@@ -27,8 +27,27 @@ public class Days {
     System.out.println("Enter the day number (one,two,three,four,five) in string");
     String code = in.next();
     Weekdays t= new Weekdays();
-    t.nameOfDay(code); 
+    t.nameOfDay(code);
     }// TODO code application logic here
     
-    
+    public enum Day {
+    ONE("Monday"),
+    TWO("Tuesday"),
+    THREE("Wednesday"),
+    FOUR("Thursday"),
+    FIVE("Friday"),
+    SIX("Saturday"),
+    SEVEN("Sunday");
+
+    private String dayName;
+
+    Day(String dayName) {
+        this.dayName = dayName;
+    }
+
+    public String getDayName() {
+        return dayName;
+    }
+}
+
 }
